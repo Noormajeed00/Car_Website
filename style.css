@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgba(0, 0, 0, 0.5) url(resize_dsc_0108.avif) center fixed;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+}
+
+.main{
+    padding: 24px 0;
+}
+
+.logo h3{
+    width: 150px;
+    font-size: 30px;
+    cursor: pointer;
+    color: yellow;
+}
+
+.nav-links{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links a{
+    margin-left: 36px;
+    text-decoration: none;
+    color: #fff;
+    transition: 2s;
+}
+
+.nav-links a:hover{
+    padding: 11px;
+    background-color: #000;
+}
+
+.nav-links .btn{
+    background: yellow;
+    color: #000;
+    padding: 10px 28px;
+    border-radius: 5px;
+}
+
+.content{
+    margin-top: 150px;
+    margin-left: 150px;
+    color: #fff;
+}
+
+.cars-hub {
+    color: yellow!important;
+    font-weight: bold!important;
+    font-size: 15px!important;
+}
+
+.content h1{
+    font-size: 60px;
+}
+
+.search{
+    background: #fff;
+    width: fit-content;
+    margin: 20px 0;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+    background: transparent;
+    width: 500px;
+    border:0;
+    outline: none;
+}
+
+button{
+    padding: 13px 28px;
+    margin-left: 18%;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.form{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 18%;
+    left: 65%;
+    background: rgb(32, 31, 31);
+}
+
+.form ::placeholder{
+    color: #fff;
+}
+
+.box input{
+    width: 75%;
+    margin: 10px;
+    margin-top: 18px;
+    margin-left: 21px;
+    padding: 13px 18px;
+    background: transparent;
+    border-bottom: 1px solid yellow;
+}
+
+.link{
+    width: 75%;
+    text-align: center;
+    background-color: yellow;
+    margin-top: 10px;
+    margin-left: 23px;
+    padding: 11px;
+    border-radius: 7px;
+}
+
+.link a{
+    text-decoration: none;
+    color: #000;
+}
+
+.link1{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.link1 a{
+    text-decoration: none;
+    color: yellow;
+    font-size: 15px;
+}
+
+.link2{
+    width: 50%;
+    margin: 23%;
+    text-align: center;
+    margin-top: 40px;
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.link2 a{
+    text-decoration: none;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+
+    /* Adjust body for mobile */
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .main {
+        padding: 10px 0;
+    }
+
+    .logo h3 {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    .nav-links .btn {
+        margin-top: 10px;
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+
+    .content {
+        margin-top: 100px;
+        margin-left: 20px;
+        font-size: 18px;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .search {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    button {
+        margin-left: 0;
+        width: 100%;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .form {
+        width: 100%;
+        height: auto;
+        top: 20%;
+        left: 0;
+        padding: 20px;
+    }
+
+    .box input {
+        width: 90%;
+        margin: 10px 5%;
+    }
+
+    .link {
+        width: 90%;
+        margin: 10px 5%;
+    }
+
+    .link2 {
+        width: 80%;
+        margin: 10%;
+    }
+}
